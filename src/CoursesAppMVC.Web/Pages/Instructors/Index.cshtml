@@ -1,0 +1,38 @@
+﻿
+@page
+@using CoursesAppMVC.Localization
+@using CoursesAppMVC.Permissions
+@using CoursesAppMVC.Web.Pages.Instructors
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<CoursesAppMVCResource> L
+@inject IAuthorizationService AuthorizationService
+@model IndexModel
+
+@section scripts
+{
+    <abp-script src="/Pages/Instructors/Index.js"/>
+}
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Instructors"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                @if (await AuthorizationService
+                    .IsGrantedAsync(CoursesAppMVCPermissions.Instructors.Create))
+                {
+                    <abp-button id="NewInstructorButton"
+                                text="@L["NewInstructor"].Value"
+                                icon="plus"
+                                button-type="Primary"/>
+                }
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="InstructorsTable"></abp-table>
+    </abp-card-body>
+</abp-card>

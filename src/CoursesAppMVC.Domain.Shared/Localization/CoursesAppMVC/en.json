@@ -1,0 +1,55 @@
+{
+  
+    "Culture": "en",
+  "Texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to the application. This is a startup project based on the ABP framework. For more information, visit abp.io.",
+    "Menu:CourseApp": "Courses App",
+    "Menu:Courses": "Courses",
+
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+    "StartDate": "Start date",
+    "NewCourse": "New Course",
+    "Name": "Name",
+    "Type": "Type",
+    "Price": "Price",
+    "CreationTime": "Creation time",
+    "AreYouSure": "Are you sure?",
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "CourseDeletionConfirmationMessage": "Are you sure to delete the Course '{0}'?",
+    "SuccessfullyDeleted": "Successfully deleted!",
+
+    "Permission:CourseApp": "Course App",
+    "Permission:Courses": "Course Management",
+    "Permission:Courses.Create": "Creating new Courses",
+    "Permission:Courses.Edit": "Editing the Courses",
+    "Permission:Courses.Delete": "Deleting the Courses",
+
+    "Permission:Instructors": "Instructor Management",
+    "Permission:Instructors.Create": "Creating new Instructors",
+    "Permission:Instructors.Edit": "Editing the Instructors",
+    "Permission:Instructors.Delete": "Deleting the Instructors",
+
+    "Menu:Instructors": "Instructors",
+    "Menu:Students": "Students",
+    "Students": "Students",
+    "Instructors": "Instructors",
+    "InstructorDeletionConfirmationMessage": "Are you sure to delete the Instructor '{0}'?",
+    "StudentsDeletionConfirmationMessage": "Are you sure to delete the Students '{0}'?",
+
+    "Permission:Students": "Student Management",
+    "Permission:Students.Create": "Creating new Students",
+    "Permission:Students.Edit": "Editing the Students",
+    "Permission:Students.Delete": "Deleting the Students",
+
+    "NewInstructor": "New Instructor",
+    "NewStudent": "New Student"
+
+
+
+  }
+  }
